@@ -18,7 +18,9 @@ export const ListItem: FC<PropsWithChildren> = ({ children }) => (
   </View>
 )
 
-export const List: FC<{ children: ReactElement<typeof ListItem>[] }> = ({ children }) => (
+type ItemType = ReactElement<typeof ListItem>;
+
+export const List: FC<{ children: ItemType | ItemType[] }> = ({ children }) => (
   <View style={styles.list}>
     {children}
   </View>

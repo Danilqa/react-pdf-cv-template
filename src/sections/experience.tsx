@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 import { Row } from '../elements/row.tsx';
 import { Bullet } from '../elements/bullet.tsx';
 import { COLOR } from '../constants.ts';
+import { getDateRange } from '../utils/date.utils.ts';
 
 interface ExperienceProps extends PropsWithChildren {
   title: string;
@@ -45,7 +46,7 @@ export const Experience = memo<ExperienceProps>(({
   title,
   subtitle,
   startDate,
-  endDate = 'present',
+  endDate,
   children,
   isLast = false,
   hasDivider = false,
@@ -58,9 +59,9 @@ export const Experience = memo<ExperienceProps>(({
       </View>
       {startDate && (
         <Row>
-          <Text>{startDate} - {endDate}</Text>
+          <Text>{startDate} - {endDate || 'present'}</Text>
           <Bullet/>
-          <Text>1 yr 6 mos</Text>
+          <Text>{getDateRange(startDate, endDate)}</Text>
         </Row>
       )}
     </Row>}
