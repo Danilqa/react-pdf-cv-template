@@ -9,6 +9,7 @@ import { List, ListItem } from './elements/list.tsx';
 
 import FontRegular from './fonts/regular.ttf';
 import FontBold from './fonts/bold.ttf';
+import { Bold } from './elements/bold.tsx';
 
 const styles = StyleSheet.create({
   page: {
@@ -68,34 +69,36 @@ export const MyDocument = () => (
         hasDivider
       >
         <Text>
-          3M is an American multinational conglomerate (Ranked No. 102 in Fortune 500) operating in the fields of
+          Guide DAO is an educational platform for Web3 and Solidity development. I worked on 2 projects: the website
+          and the educational platform (LMS)
         </Text>
         <List>
           <ListItem>
-            Developed and launched a website from the scratch using Next.js, Typescript,
-            and Sanity as a headless CMS. This new site achieved a 30% increase in inquiries compared
+            Developed and launched a website from the scratch using <Bold>Next.js</Bold>, <Bold>Typescript</Bold>,
+            and <Bold>Sanity</Bold> as a headless CMS. This new site achieved a <Bold>30% increase</Bold> in inquiries compared
             to its predecessor.
           </ListItem>
           <ListItem>
             Implemented a flexible blog using Sanity, enabling the creation of articles through components, eliminating the need for developer involvement.
           </ListItem>
           <ListItem>
-            Implemented a lead form feature complete with validations, CAPTCHA, CRM integration, and email notifications using Mailgun. Integrated MongoDB with regular backups for data storage.
+            Implemented a lead form feature complete with validations, CAPTCHA, CRM integration, and email notifications using Mailgun.
+            Integrated <Bold>MongoDB</Bold> with regular backups for data storage.
           </ListItem>
           <ListItem>
-            Integrated Stripe to facilitate payment processing.
+            Integrated <Bold>Stripe</Bold> to facilitate payment processing.
           </ListItem>
           <ListItem>
             Supported multiple localizations.
           </ListItem>
           <ListItem>
-            Crafted a WebGL shader for the homepage.
+            Crafted a <Bold>WebGL</Bold> shader for the homepage.
           </ListItem>
           <ListItem>
           Incorporated Sentry for efficient error monitoring and platform reliability.
           </ListItem>
           <ListItem>
-            Wrote unit tests using vitest and react-testing-library.
+            Wrote unit tests using <Bold>vitest</Bold> and <Bold>react-testing-library</Bold>.
           </ListItem>
         </List>
       </Experience>
@@ -108,17 +111,17 @@ export const MyDocument = () => (
         hasDivider
       >
         <Text>
-          3M is an American multinational conglomerate (Ranked No. 102 in Fortune 500)
+          Arrival is a British electric vehicle manufacturer implementing a new micro-factory approach to production.
         </Text>
         <List>
           <ListItem>
-            Led the research, development, integration, and onboarding of CMS solution, coordinating with 4 teams.
+            Led the research, development, integration, and onboarding of CMS solution, coordinating with <Bold>4 teams</Bold>.
           </ListItem>
           <ListItem>
             Designed the data model architecture for the Arrival Store project.
           </ListItem>
           <ListItem>
-            Maintained UI-components of the primary design system library using React and TypeScript.
+            Maintained UI-components of the primary design system library using <Bold>React</Bold> and <Bold>TypeScript</Bold>.
           </ListItem>
           <ListItem>
             Collected requirements, organized several meetings, and implemented an email layout solution that was adopted company-wide.
@@ -127,7 +130,7 @@ export const MyDocument = () => (
             Created prototypes to validate business and design hypotheses.
           </ListItem>
           <ListItem>
-            Transformed Figma and Protopie prototypes into functional React components using Typescript.
+            Transformed Figma and Protopie prototypes into functional <Bold>React</Bold> components using <Bold>Typescript</Bold>.
           </ListItem>
         </List>
       </Experience>
@@ -140,17 +143,18 @@ export const MyDocument = () => (
         hasDivider
       >
         <Text>
-          3M is an American multinational conglomerate (Ranked No. 102 in Fortune 500)
+          Moscow Coding School is a provider of leading online courses in tech education.
         </Text>
         <List>
           <ListItem>
-            Developed and launched a website from scratch using React and Gatsby, integrated Mailgun and bank APIs.
+            Developed and launched a website from scratch using <Bold>React</Bold> and <Bold>Gatsby</Bold>,
+            integrated Mailgun and bank APIs.
           </ListItem>
           <ListItem>
-            Constructed a CMS using Contentful and GraphQL.
+            Constructed a CMS using <Bold>Contentful</Bold> and <Bold>GraphQL</Bold>.
           </ListItem>
           <ListItem>
-            Worked with AWS lambdas and Vercel's serverless functions using Node.js.
+            Worked with <Bold>AWS lambdas</Bold> and Vercel's serverless functions using <Bold>Node.js</Bold>.
           </ListItem>
         </List>
       </Experience>
@@ -163,12 +167,15 @@ export const MyDocument = () => (
         isLast
       >
         <Text>
-          3M is an American multinational conglomerate (Ranked No. 102 in Fortune 500)
+          ONY is a renowned Russian digital agency specializing in strategy, branding, and digital solutions.
+          They've garnered numerous prestigious awards, including Cannes Lions and Awwwards, and hold high rankings
+          among digital productions and design studios in Russia.
         </Text>
         <List>
           <ListItem>
-            I started my journey as an intern, and eventually grew into a developer. I worked on projects utilizing React,
-            Vue, and jQuery for notable clients like Tretyakov gallery, KIA, ADG Group, and Megafon.
+            I started my journey as an intern, and eventually grew into a developer. I worked on projects utilizing
+            <Bold> React</Bold>, <Bold>Vue</Bold>, and <Bold>jQuery</Bold> for notable clients like Tretyakov gallery,
+            KIA, ADG Group, and Megafon.
           </ListItem>
         </List>
       </Experience>
