@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY.COMPUTER_MODERN,
     color: COLOR.PRIMARY,
     backgroundColor: COLOR.SECONDARY,
-    padding: 20,
+    padding: '10pt 20pt',
     fontSize: 11,
   },
   section: {

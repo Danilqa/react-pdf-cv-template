@@ -5,12 +5,12 @@ import { COLOR } from '../constants.ts';
 const styles = StyleSheet.create({
   sectionHeading: {
     display: 'flex',
-    marginTop: 15,
+    marginTop: 10,
     marginBottom: 8,
     paddingBottom: 2,
     width: '100%',
     borderBottom: `0.5pt solid ${COLOR.PRIMARY}`,
-    fontSize: 9,
+    fontSize: 10,
     textTransform: 'uppercase',
   },
 });
