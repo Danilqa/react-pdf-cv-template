@@ -1,6 +1,10 @@
 export function getDateRange(startDate: string, endDate?: string): string {
   const [start, end] = [new Date(startDate), endDate ? new Date(endDate) : new Date()];
 
+  if (isNaN(start.getTime()) || isNaN(end.getTime())) {
+    throw new Error('Invalid Date');
+  }
+
   let years = end.getFullYear() - start.getFullYear();
   let months = end.getMonth() - start.getMonth();
 
