@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
 });
 
 interface RowProps extends PropsWithChildren {
-  style?: Styles[string];
+  justifyContent?: Styles[string]['justifyContent'];
 }
 
-export const Row: FC<RowProps> = ({ children, style = {} }) => (
-  <View style={[styles.row, style]}>
+export const Row: FC<RowProps> = ({ children, justifyContent }) => (
+  <View style={[styles.row, { justifyContent }]}>
     {children}
   </View>
 )

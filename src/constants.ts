@@ -1,3 +1,8 @@
 export const FONT_FAMILY = {
-  REGULAR: 'Computer Modern Serif',
+  COMPUTER_MODERN: 'Computer Modern',
+}
+
+export const COLOR = {
+  PRIMARY: '#000',
+  SECONDARY: '#fff',
 }

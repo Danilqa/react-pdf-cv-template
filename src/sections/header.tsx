@@ -1,9 +1,8 @@
-import { memo, ReactNode } from 'react';
+import { memo, PropsWithChildren } from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 
-interface HeaderProps {
+interface HeaderProps extends PropsWithChildren {
   fullName: string;
-  children: ReactNode;
 }
 
 const styles = StyleSheet.create({
