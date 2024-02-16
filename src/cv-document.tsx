@@ -69,16 +69,16 @@ export const CvDocument = () => (
       >
         <Text>
           Working on a white-label Sportsbook platform for multinational users across the world. Developing 3 projects:
-          the main application, the CMS app, and back office.
+          the main application, CMS, and back office. Used <Bold>Next.js</Bold>, <Bold>React Query</Bold>,
+          and <Bold>Zustand</Bold>.
         </Text>
         <List>
           <ListItem>
-            Analysed, planned and improved <Bold>performance</Bold> and <Bold>page load speed</Bold> of the main app:
-            the Lighthouse score on mobiles increased <Bold>from 18 to 68</Bold>
+            Decomposed, planned and implemented new complex features.
           </ListItem>
           <ListItem>
-            Developed the audit logger for CMS, successfully addressing the lack of logger functionality in Strapi,
-            enhancing project settings security.
+            Analysed and improved <Bold>performance</Bold> and <Bold>page load speed</Bold> of the main app:
+            the Lighthouse score on mobiles increased <Bold>from 18 to 68</Bold>.
           </ListItem>
         </List>
       </Experience>
@@ -131,7 +131,9 @@ export const CvDocument = () => (
             Kazakhstan Post, in 3 months. This allowed the company to raise money. The solution increased the delivery
             of parcels by <Bold>5 times</Bold> in the country.
           </ListItem>
-          <ListItem>Rewrote the main company project from <Bold>AngularJS</Bold> to <Bold>Angular 6</Bold> + <Bold>NgRx</Bold></ListItem>
+          <ListItem>
+            Rewrote the main company project from <Bold>AngularJS</Bold> to <Bold>Angular 6</Bold> and <Bold>NgRx</Bold>.
+          </ListItem>
         </List>
       </Experience>
 
