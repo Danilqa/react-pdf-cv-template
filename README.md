@@ -3,9 +3,9 @@
 This is a simple, elegant, and easy-to-use template for creating CV. It's powered by **React** and **React PDF**.
 It accommodates a lot of content and designed to follow the best practices.
 
-⭐ Bookmark and help others discover this template! Star it on GitHub.
+Bookmark and help others discover this template! ⭐ Star it on GitHub.
 
-# How to use
+## How to use
 
 1. Fork this repository.
 2. Install dependencies: `pnpm install`
@@ -13,13 +13,13 @@ It accommodates a lot of content and designed to follow the best practices.
 4. Fill you data here: `src/cv-document.tsx`
 5. Your PDF is ready! Download your PDF by clicking the button on website or `pnpm build`
 
-# How to deploy
+## How to deploy
 
 1. Set up your GitHub Pages in the settings of your repository.
 2. After successful deployment, you can access your CV by the following link: 
 `https://<your-github-username>.github.io/<your-repository-name>/cv.pdf`
 
-# Features
+## Features
 
 1. Calculation of work experience duration.
 2. Ready for integration with release pipelines. A PDF generation script is included, allowing for an always up-to-date 
