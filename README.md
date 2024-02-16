@@ -11,7 +11,7 @@ Bookmark and help others discover this template! ⭐ Star it on GitHub.
 2. Install dependencies: `pnpm install`
 3. Start project in dev mode: `pnpm dev` and open: http://localhost:5173
 4. Fill you data here: `src/cv-document.tsx`
-5. Your PDF is ready! Download your PDF by clicking the button on website or `pnpm build`
+5. Your PDF is ready! Download it by clicking the button on website or `pnpm build`
 
 ## How to deploy
 
