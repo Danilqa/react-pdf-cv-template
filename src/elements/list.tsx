@@ -1,5 +1,6 @@
 import { StyleSheet, View, Text } from '@react-pdf/renderer';
 import { FC, PropsWithChildren, ReactElement } from 'react';
+import { Row } from './row.tsx';
 
 const styles = StyleSheet.create({
   list: {
@@ -9,12 +10,22 @@ const styles = StyleSheet.create({
   item: {
     width: '100%',
     display: 'flex',
+  },
+  bullet: {
+    display: 'flex',
+    marginTop: -1,
+    marginRight: 5,
   }
 });
 
 export const ListItem: FC<PropsWithChildren> = ({ children }) => (
   <View style={styles.item}>
-    <Text>• {children}</Text>
+    <Row>
+      <View style={styles.bullet}>
+        <Text>•</Text>
+      </View>
+      <Text>{children}</Text>
+      </Row>
   </View>
 )
 

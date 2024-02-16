@@ -54,17 +54,19 @@ export const Experience = memo<ExperienceProps>(({
   hasDuration = true,
 }) => (
   <View style={[styles.experience, isLast ? styles.lastExperience : {}]}>
-    <Text style={styles.title}>{title}</Text>
-    {subtitle && <Row justifyContent="space-between">
-      <View style={styles.subtitle}>
-        <Text>{subtitle}</Text>
-      </View>
+    <Row justifyContent="space-between">
+      <Text style={styles.title}>{title}</Text>
       {startDate && (
         <Row>
           <Text>{startDate} - {endDate || 'present'}</Text>
           {hasDuration && <><Bullet/><Text>{getDateRange(startDate, endDate)}</Text></>}
         </Row>
       )}
+    </Row>
+    {subtitle && <Row justifyContent="space-between">
+      <View style={styles.subtitle}>
+        <Text>{subtitle}</Text>
+      </View>
     </Row>}
 
     <View style={styles.content} wrap>
