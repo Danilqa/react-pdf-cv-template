@@ -55,6 +55,8 @@ export const CvDocument = () => (
           <Text>+48 571801626</Text>
         </Row>
         <Row justifyContent="center">
+          <Text>https://github.com/Danilqa</Text>
+          <Bullet />
           <Text>London, UK</Text>
         </Row>
       </Header>
@@ -85,7 +87,7 @@ export const CvDocument = () => (
 
       <Experience
         title="Arrival"
-        subtitle="Frontend Developer / Senior Full-Stack Developer"
+        subtitle="Frontend Developer, then Senior Full-Stack Developer"
         startDate="Jan 2019"
         endDate="Oct 2022"
         hasDivider
