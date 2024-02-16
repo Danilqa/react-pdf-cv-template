@@ -1,5 +1,7 @@
 # CV PDF Template
 
+<img align="right" width="100" height="100" title="Logo" src="./public/favicon.svg" />
+
 This is a simple, elegant, and easy-to-use template for creating CV. It's powered by **React** and **React PDF**.
 It accommodates a lot of content and designed to follow the best practices.
 
@@ -8,16 +10,16 @@ Bookmark and help others discover this template! ⭐ Star it on GitHub.
 ## How to use
 
 1. Fork this repository.
-2. Install dependencies: `pnpm install`
-3. Start project in dev mode: `pnpm dev` and open: http://localhost:5173
-4. Fill you data here: `src/cv-document.tsx`
-5. Your PDF is ready! Download it by clicking the button on website or `pnpm build`
+2. Install dependencies: `pnpm install`.
+3. Start project in dev mode: `pnpm dev` and open: http://localhost:5173.
+4. Fill you data here: `src/cv-document.tsx`.
+5. Your PDF is ready! Download it by clicking the button on website.
 
 ## How to deploy
 
 1. Set up your GitHub Pages in the settings of your repository.
 2. After successful deployment, you can access your CV by the following link: 
-`https://<your-github-username>.github.io/<your-repository-name>/cv.pdf`
+`https://<your-github-username>.github.io/<your-repository-name>/cv.pdf`.
 
 ## Features
 
@@ -37,7 +39,7 @@ tools like LaTeX.
 
 1. `src/cv-document.tsx` - main file for your CV. You can fill your data here.
 2. `src/elements` - folder with atomic elements for your CV: bullet, list, bold, etc.
-3. `src/sections` - folder with complex sections for your CV: header and experience
+3. `src/sections` - folder with complex sections for your CV: header and experience.
 
 ## Credits
 
