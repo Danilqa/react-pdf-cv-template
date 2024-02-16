@@ -1,4 +1,5 @@
 import { Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer';
+
 import { Header } from './sections/header.tsx';
 import { COLOR, FONT_FAMILY } from './constants.ts';
 import { Bullet } from './elements/bullet.tsx';
@@ -6,10 +7,8 @@ import { Row } from './elements/row.tsx';
 import { SectionHeading } from './elements/section-heading.tsx';
 import { Experience } from './sections/experience.tsx';
 import { List, ListItem } from './elements/list.tsx';
-
-import FontRegular from './fonts/regular.ttf';
-import FontBold from './fonts/bold.ttf';
 import { Bold } from './elements/bold.tsx';
+import { resolveFontPath } from './utils/path/path.utils.ts';
 
 const styles = StyleSheet.create({
   page: {
@@ -32,27 +31,27 @@ Font.register({
   family: FONT_FAMILY.COMPUTER_MODERN,
   fonts: [
     {
-      src: FontRegular,
+      src: resolveFontPath('regular'),
       fontStyle: 'normal',
       fontWeight: 'normal'
     },
     {
-      src: FontBold,
+      src: resolveFontPath('bold'),
       fontStyle: 'bold',
       fontWeight: 'bold'
     },
   ]
 });
 
-export const MyDocument = () => (
+export const CvDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       <Header fullName="Nadya Koroleva">
         <Row>
           <Text>https://www.linkedin.com/in/nadyakoroleva</Text>
-          <Bullet/>
+          <Bullet />
           <Text>nadin.koroleva@gmail.com</Text>
-          <Bullet/>
+          <Bullet />
           <Text>+48 571025611</Text>
         </Row>
         <Row justifyContent="center">
@@ -75,14 +74,17 @@ export const MyDocument = () => (
         <List>
           <ListItem>
             Developed and launched a website from the scratch using <Bold>Next.js</Bold>, <Bold>Typescript</Bold>,
-            and <Bold>Sanity</Bold> as a headless CMS. This new site achieved a <Bold>30% increase</Bold> in inquiries compared
+            and <Bold>Sanity</Bold> as a headless CMS. This new site achieved a <Bold>30% increase</Bold> in inquiries
+            compared
             to its predecessor.
           </ListItem>
           <ListItem>
-            Implemented a flexible blog using Sanity, enabling the creation of articles through components, eliminating the need for developer involvement.
+            Implemented a flexible blog using Sanity, enabling the creation of articles through components, eliminating
+            the need for developer involvement.
           </ListItem>
           <ListItem>
-            Implemented a lead form feature complete with validations, CAPTCHA, CRM integration, and email notifications using Mailgun.
+            Implemented a lead form feature complete with validations, CAPTCHA, CRM integration, and email notifications
+            using Mailgun.
             Integrated <Bold>MongoDB</Bold> with regular backups for data storage.
           </ListItem>
           <ListItem>
@@ -95,7 +97,7 @@ export const MyDocument = () => (
             Crafted a <Bold>WebGL</Bold> shader for the homepage.
           </ListItem>
           <ListItem>
-          Incorporated Sentry for efficient error monitoring and platform reliability.
+            Incorporated Sentry for efficient error monitoring and platform reliability.
           </ListItem>
           <ListItem>
             Wrote unit tests using <Bold>vitest</Bold> and <Bold>react-testing-library</Bold>.
@@ -115,22 +117,26 @@ export const MyDocument = () => (
         </Text>
         <List>
           <ListItem>
-            Led the research, development, integration, and onboarding of CMS solution, coordinating with <Bold>4 teams</Bold>.
+            Led the research, development, integration, and onboarding of CMS solution, coordinating with <Bold>4
+            teams</Bold>.
           </ListItem>
           <ListItem>
             Designed the data model architecture for the Arrival Store project.
           </ListItem>
           <ListItem>
-            Maintained UI-components of the primary design system library using <Bold>React</Bold> and <Bold>TypeScript</Bold>.
+            Maintained UI-components of the primary design system library
+            using <Bold>React</Bold> and <Bold>TypeScript</Bold>.
           </ListItem>
           <ListItem>
-            Collected requirements, organized several meetings, and implemented an email layout solution that was adopted company-wide.
+            Collected requirements, organized several meetings, and implemented an email layout solution that was
+            adopted company-wide.
           </ListItem>
           <ListItem>
             Created prototypes to validate business and design hypotheses.
           </ListItem>
           <ListItem>
-            Transformed Figma and Protopie prototypes into functional <Bold>React</Bold> components using <Bold>Typescript</Bold>.
+            Transformed Figma and Protopie prototypes into functional <Bold>React</Bold> components
+            using <Bold>Typescript</Bold>.
           </ListItem>
         </List>
       </Experience>
@@ -183,15 +189,15 @@ export const MyDocument = () => (
       <SectionHeading>Skills</SectionHeading>
       <Row>
         <Text>JavaScript</Text>
-        <Bullet/>
+        <Bullet />
         <Text>TypeScript</Text>
-        <Bullet/>
+        <Bullet />
         <Text>React</Text>
-        <Bullet/>
+        <Bullet />
         <Text>Next.js</Text>
-        <Bullet/>
+        <Bullet />
         <Text>Sanity</Text>
-        <Bullet/>
+        <Bullet />
         <Text>GraphQL</Text>
       </Row>
 

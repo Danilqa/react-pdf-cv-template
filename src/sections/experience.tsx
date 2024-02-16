@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 import { Row } from '../elements/row.tsx';
 import { Bullet } from '../elements/bullet.tsx';
 import { COLOR } from '../constants.ts';
-import { getDateRange } from '../utils/date.utils.ts';
+import { getDateRange } from '../utils/date/date.utils.ts';
 
 interface ExperienceProps extends PropsWithChildren {
   title: string;

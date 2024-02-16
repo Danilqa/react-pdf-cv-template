@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "pnpm build:site && pnpm build:pdf",
+    "build:site": "tsc && vite build",
+    "build:pdf": "ts-node --esm --project tsconfig.ssr.json src/scripts/build-pdf.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "test": "vitest run",
-    "preview": "vite preview"
+    "test": "vitest run"
   },
   "dependencies": {
     "@react-pdf/renderer": "3.3.8",
+    "chrono-node": "2.7.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -24,6 +26,7 @@
     "eslint": "8.56.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.5",
+    "ts-node": "10.9.2",
     "typescript": "5.2.2",
     "vite": "5.1.0",
     "vitest": "0.31.0"

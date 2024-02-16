@@ -1,7 +1,10 @@
-export function getDateRange(startDate: string, endDate?: string): string {
-  const [start, end] = [new Date(startDate), endDate ? new Date(endDate) : new Date()];
+import * as chrono from 'chrono-node';
 
-  if (isNaN(start.getTime()) || isNaN(end.getTime())) {
+export function getDateRange(startDate: string, endDate?: string): string {
+  const start = chrono.parseDate(startDate);
+  const end = endDate ? chrono.parseDate(endDate) : new Date();
+
+  if (!start || !end) {
     throw new Error('Invalid Date');
   }
 
