@@ -12,6 +12,7 @@ interface ExperienceProps extends PropsWithChildren {
   endDate?: string;
   isLast?: boolean;
   hasDivider?: boolean;
+  hasDuration?: boolean;
 }
 
 const styles = StyleSheet.create({
@@ -50,6 +51,7 @@ export const Experience = memo<ExperienceProps>(({
   children,
   isLast = false,
   hasDivider = false,
+  hasDuration = true,
 }) => (
   <View style={[styles.experience, isLast ? styles.lastExperience : {}]}>
     <Text style={styles.title}>{title}</Text>
@@ -60,8 +62,7 @@ export const Experience = memo<ExperienceProps>(({
       {startDate && (
         <Row>
           <Text>{startDate} - {endDate || 'present'}</Text>
-          <Bullet/>
-          <Text>{getDateRange(startDate, endDate)}</Text>
+          {hasDuration && <><Bullet/><Text>{getDateRange(startDate, endDate)}</Text></>}
         </Row>
       )}
     </Row>}

@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLOR.SECONDARY,
     padding: '10pt 20pt',
     fontSize: 11,
-    lineHeight: 1.1,
+    lineHeight: 1.2,
   },
   section: {
     margin: 10,
@@ -46,13 +46,13 @@ Font.register({
 export const CvDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <Header fullName="Nadya Koroleva">
+      <Header fullName="Daniil Sitdikov">
         <Row>
-          <Text>https://www.linkedin.com/in/nadyakoroleva</Text>
+          <Text>https://www.linkedin.com/in/dsitdikov</Text>
           <Bullet />
-          <Text>nadin.koroleva@gmail.com</Text>
+          <Text>hello.boriskas@gmail.com</Text>
           <Bullet />
-          <Text>+48 571025611</Text>
+          <Text>+48 571801626</Text>
         </Row>
         <Row justifyContent="center">
           <Text>London, UK</Text>
@@ -62,54 +62,32 @@ export const CvDocument = () => (
       <SectionHeading>Experience</SectionHeading>
 
       <Experience
-        title="Guide DAO"
-        subtitle="Frontend Developer"
-        startDate="Feb 2023"
+        title="SoftSwiss"
+        subtitle="Senior Frontend Developer"
+        startDate="Oct 2022"
         hasDivider
       >
         <Text>
-          Guide DAO is an educational platform for Web3 and Solidity development. I worked on 2 projects: the website
-          and the educational platform (LMS)
+          Working on a white-label Sportsbook platform for multinational users across the world. Developing 3 projects:
+          the main application, the CMS app, and back office.
         </Text>
         <List>
           <ListItem>
-            Developed and launched a website from the scratch using <Bold>Next.js</Bold>, <Bold>Typescript</Bold>,
-            and <Bold>Sanity</Bold> as a headless CMS. This new site achieved a <Bold>30% increase</Bold> in inquiries
-            compared
-            to its predecessor.
+            Analysed, planned and improved <Bold>performance</Bold> and <Bold>page load speed</Bold> of the main app:
+            the Lighthouse score on mobiles increased <Bold>from 18 to 68</Bold>
           </ListItem>
           <ListItem>
-            Implemented a flexible blog using Sanity, enabling the creation of articles through components, eliminating
-            the need for developer involvement.
-          </ListItem>
-          <ListItem>
-            Implemented a lead form feature complete with validations, CAPTCHA, CRM integration, and email notifications
-            using Mailgun.
-            Integrated <Bold>MongoDB</Bold> with regular backups for data storage.
-          </ListItem>
-          <ListItem>
-            Integrated <Bold>Stripe</Bold> to facilitate payment processing.
-          </ListItem>
-          <ListItem>
-            Supported multiple localizations.
-          </ListItem>
-          <ListItem>
-            Crafted a <Bold>WebGL</Bold> shader for the homepage.
-          </ListItem>
-          <ListItem>
-            Incorporated Sentry for efficient error monitoring and platform reliability.
-          </ListItem>
-          <ListItem>
-            Wrote unit tests using <Bold>vitest</Bold> and <Bold>react-testing-library</Bold>.
+            Developed the audit logger for CMS, successfully addressing the lack of logger functionality in Strapi,
+            enhancing project settings security.
           </ListItem>
         </List>
       </Experience>
 
       <Experience
-        title="ARRIVAL"
-        subtitle="Frontend Developer"
-        startDate="Feb 2020"
-        endDate="Feb 2023"
+        title="Arrival"
+        subtitle="Frontend Developer / Senior Full-Stack Developer"
+        startDate="Jan 2019"
+        endDate="Oct 2022"
         hasDivider
       >
         <Text>
@@ -117,72 +95,43 @@ export const CvDocument = () => (
         </Text>
         <List>
           <ListItem>
-            Led the research, development, integration, and onboarding of CMS solution, coordinating with <Bold>4
-            teams</Bold>.
+            Created in-house procurement platform from scratch using <Bold>React</Bold>, <Bold>TypeScript</Bold>, <Bold>Redux</Bold>,
+            and <Bold>microservices</Bold> on <Bold>Kotlin</Bold> and <Bold>Camunda BPMN</Bold>. It reduced supplier onboarding cycle time by <Bold>90%</Bold>,
+            reduce costs by <Bold>40%</Bold>, and data quality improved by <Bold>95%</Bold>. <Bold>5000</Bold> suppliers onboarded.
           </ListItem>
           <ListItem>
-            Designed the data model architecture for the Arrival Store project.
+            Created a UI Kit library with <Bold>29</Bold> <Bold>React</Bold> components, <Bold>100%</Bold> test code
+            coverage and automatic doc generation.
           </ListItem>
           <ListItem>
-            Maintained UI-components of the primary design system library
-            using <Bold>React</Bold> and <Bold>TypeScript</Bold>.
+            Implemented graph-based data visualization in-house app: discovering and controlling business-data using
+            {" "}<Bold>React</Bold>, <Bold>D3.js</Bold>, and <Bold>SVG</Bold>
           </ListItem>
           <ListItem>
-            Collected requirements, organized several meetings, and implemented an email layout solution that was
-            adopted company-wide.
-          </ListItem>
-          <ListItem>
-            Created prototypes to validate business and design hypotheses.
-          </ListItem>
-          <ListItem>
-            Transformed Figma and Protopie prototypes into functional <Bold>React</Bold> components
-            using <Bold>Typescript</Bold>.
+            Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, e2e tests
           </ListItem>
         </List>
       </Experience>
 
       <Experience
-        title="Moscow Coding School"
+        title="VeeRoute"
         subtitle="Frontend Developer"
-        startDate="Aug 2019"
-        endDate="Feb 2020"
+        startDate="Sep 2017"
+        endDate="Jan 2019"
         hasDivider
-      >
-        <Text>
-          Moscow Coding School is a provider of leading online courses in tech education.
-        </Text>
-        <List>
-          <ListItem>
-            Developed and launched a website from scratch using <Bold>React</Bold> and <Bold>Gatsby</Bold>,
-            integrated Mailgun and bank APIs.
-          </ListItem>
-          <ListItem>
-            Constructed a CMS using <Bold>Contentful</Bold> and <Bold>GraphQL</Bold>.
-          </ListItem>
-          <ListItem>
-            Worked with <Bold>AWS lambdas</Bold> and Vercel's serverless functions using <Bold>Node.js</Bold>.
-          </ListItem>
-        </List>
-      </Experience>
-
-      <Experience
-        title="ONY"
-        subtitle="Junior Frontend Developer"
-        startDate="Jun 2018"
-        endDate="Aug 2019"
         isLast
       >
         <Text>
-          ONY is a renowned Russian digital agency specializing in strategy, branding, and digital solutions.
-          They've garnered numerous prestigious awards, including Cannes Lions and Awwwards, and hold high rankings
-          among digital productions and design studios in Russia.
+          VeeRoute is a start-up that produces solutions for the logistics of big e-commerce clients.
+          Worked on user interfaces for logistics optimization company products.
         </Text>
         <List>
           <ListItem>
-            I started my journey as an intern, and eventually grew into a developer. I worked on projects utilizing
-            <Bold> React</Bold>, <Bold>Vue</Bold>, and <Bold>jQuery</Bold> for notable clients like Tretyakov gallery,
-            KIA, ADG Group, and Megafon.
+            Helped the company stay alive by working with the team to create an MVP, a specific solution for the national
+            Kazakhstan Post, in 3 months. This allowed the company to raise money. The solution increased the delivery
+            of parcels by <Bold>5 times</Bold> in the country.
           </ListItem>
+          <ListItem>Rewrote the main company project from <Bold>AngularJS</Bold> to <Bold>Angular 6</Bold> + <Bold>NgRx</Bold></ListItem>
         </List>
       </Experience>
 
@@ -196,23 +145,59 @@ export const CvDocument = () => (
         <Bullet />
         <Text>Next.js</Text>
         <Bullet />
-        <Text>Sanity</Text>
+        <Text>Performance Optimization</Text>
         <Bullet />
-        <Text>GraphQL</Text>
+        <Text>React Query</Text>
+        <Bullet />
+        <Text>Zustand</Text>
+        <Bullet />
+        <Text>Redux</Text>
       </Row>
+
+      <SectionHeading>Education</SectionHeading>
+      <Experience
+        title="Saint Petersburg State University of Aerospace Instrumentation"
+        subtitle="Bachelor’s Degree in Software Engineering (GPA 4.28 / 5.0)"
+        startDate="2015"
+        endDate="2019"
+        hasDuration={false}
+        isLast
+      />
 
       <SectionHeading>Public Activities</SectionHeading>
       <Experience title="Mentorship">
-        <Text>Assistant on online-courses Frontend development for beginners.</Text>
+        <Text>
+          Mentored <Bold>37</Bold> developers at GetMentor platform, gave <Bold>6</Bold> tech talks at GuideDao coding
+          school.
+        </Text>
       </Experience>
-      <Experience title="Podcast">
-        <Text>Made a podcast Standing desk for code newbies.</Text>
+      <Experience title="Open Source">
+        <List>
+          <ListItem>
+            Created node-file-router (<Bold>118 stars</Bold>, <Bold>2-nd Tool of Week</Bold>)
+          </ListItem>
+          <ListItem>
+            Contributed to DefinitelyTyped / Jaeger (<Bold>46.6k stars</Bold>)
+          </ListItem>
+          <ListItem>Other created projects: web-performance-handbook, image-proxy-service, react-props-diff-logger</ListItem>
+        </List>
       </Experience>
-      <Experience title="Fashion Tech Summit">
-        <Text>Had a talk at Fashion Tech Summit with theme Female creative coding.</Text>
+      <Experience title="Tech Writting">
+        <Text>
+          Wrote <Bold>11</Bold> articles on Dev.to and Hackernoon with <Bold>26k</Bold> views in total. <Bold>3 </Bold>
+          articles were featured as top stories.
+        </Text>.
       </Experience>
-      <Experience title="Workshops" isLast>
-        <Text>Made a few workshops for designers of ONY studio about Creative Coding.</Text>
+      <Experience title="Pet Projects">
+        <Text>
+          Developed a mobile app using <Bold>React Native</Bold> with <Bold>35k users</Bold> from CIS across App Store
+          and Google Play.
+        </Text>
+      </Experience>
+      <Experience title="Hackaton — Digital Breakdown 2019" isLast>
+        <Text>
+          <Bold>3-rd place</Bold> in the world’s largest hackathon, as confirmed by <Bold>Guinness World Records.</Bold>
+        </Text>
       </Experience>
     </Page>
   </Document>

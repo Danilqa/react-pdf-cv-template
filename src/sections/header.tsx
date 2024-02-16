@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     alignItems: 'center',
-    marginBottom: -5,
+    marginBottom: -10,
   },
   fullName: {
-    fontSize: 20,
+    fontSize: 15,
     textTransform: 'uppercase',
   },
   description: {
