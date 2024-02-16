@@ -23,6 +23,7 @@
   ],
   "exclude": ["node_modules"],
   "ts-node": {
+    "esm": true,
     "compilerOptions": {
       "module": "ESNext",
     }
