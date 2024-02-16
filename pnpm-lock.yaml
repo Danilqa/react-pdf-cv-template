@@ -9,11 +9,8 @@ dependencies:
     specifier: 3.3.8
     version: 3.3.8(react@18.2.0)
   chrono-node:
-    specifier: ^2.7.5
+    specifier: 2.7.5
     version: 2.7.5
-  dayjs:
-    specifier: ^1.11.10
-    version: 1.11.10
   react:
     specifier: 18.2.0
     version: 18.2.0
