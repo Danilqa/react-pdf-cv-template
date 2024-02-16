@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "pnpm build:site && pnpm build:pdf",
     "build:site": "tsc && vite build",
-    "build:pdf": "ts-node --project tsconfig.ssr.json src/scripts/build-pdf.ts",
+    "build:pdf": "TS_NODE_PROJECT='tsconfig.ssr.json' node --loader ts-node/esm src/scripts/build-pdf.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest run"
   },
