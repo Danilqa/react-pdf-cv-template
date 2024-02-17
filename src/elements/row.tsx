@@ -4,7 +4,7 @@ import { FC, PropsWithChildren } from 'react';
 const styles = StyleSheet.create({
   row: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
 });
 

@@ -7,6 +7,6 @@ const styles = StyleSheet.create({
   }
 });
 
-export const Bold: FC<PropsWithChildren> = ({ children }) => (
+export const B: FC<PropsWithChildren> = ({ children }) => (
   <Text style={styles.bold}>{children}</Text>
 );

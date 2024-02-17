@@ -8,7 +8,9 @@ const styles = StyleSheet.create({
     display: 'flex',
   },
   item: {
-    width: '100%',
+    // Eliminate React.PDF layout issue. When 100% width is used,
+    // the text is overflowing the container.
+    maxWidth: '98%',
     display: 'flex',
   },
   bullet: {
@@ -18,20 +20,20 @@ const styles = StyleSheet.create({
   }
 });
 
-export const ListItem: FC<PropsWithChildren> = ({ children }) => (
+export const Li: FC<PropsWithChildren> = ({ children }) => (
   <View style={styles.item}>
     <Row>
       <View style={styles.bullet}>
         <Text>•</Text>
       </View>
       <Text>{children}</Text>
-      </Row>
+    </Row>
   </View>
 )
 
-type ItemType = ReactElement<typeof ListItem>;
+type ItemType = ReactElement<typeof Li>;
 
-export const List: FC<{ children: ItemType | ItemType[] }> = ({ children }) => (
+export const Ul: FC<{ children: ItemType | ItemType[] }> = ({ children }) => (
   <View style={styles.list}>
     {children}
   </View>

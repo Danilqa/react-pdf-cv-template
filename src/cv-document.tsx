@@ -6,9 +6,10 @@ import { Bullet } from './elements/bullet.tsx';
 import { Row } from './elements/row.tsx';
 import { SectionHeading } from './elements/section-heading.tsx';
 import { Experience } from './sections/experience.tsx';
-import { List, ListItem } from './elements/list.tsx';
-import { Bold } from './elements/bold.tsx';
+import { Ul, Li } from './elements/ul.tsx';
+import { B } from './elements/b.tsx';
 import { resolveFontPath } from './utils/path/path.utils.ts';
+import { A } from './elements/a.tsx';
 
 const styles = StyleSheet.create({
   page: {
@@ -43,14 +44,22 @@ export const CvDocument = () => (
     <Page size="A4" style={styles.page}>
       <Header fullName="Daniil Sitdikov">
         <Row>
-          <Text>https://www.linkedin.com/in/dsitdikov</Text>
+          <Text>
+            <A src="https://www.linkedin.com/in/dsitdikov">
+              https://www.linkedin.com/in/dsitdikov
+            </A>
+          </Text>
           <Bullet />
           <Text>hello.boriskas@gmail.com</Text>
           <Bullet />
           <Text>+48 571801626</Text>
         </Row>
         <Row justifyContent="center">
-          <Text>https://github.com/Danilqa</Text>
+          <Text>
+            <A src="https://github.com/Danilqa">
+              https://github.com/Danilqa
+            </A>
+          </Text>
           <Bullet />
           <Text>London, UK</Text>
         </Row>
@@ -66,18 +75,18 @@ export const CvDocument = () => (
       >
         <Text>
           Working on a white-label Sportsbook platform for multinational users across the world. Developing 3 projects:
-          the main application, CMS, and back office. Used <Bold>Next.js</Bold>, <Bold>React Query</Bold>,
-          and <Bold>Zustand</Bold>.
+          the main application, CMS, and back office. Used <B>Next.js</B>, <B>React Query</B>,
+          and <B>Zustand</B>.
         </Text>
-        <List>
-          <ListItem>
+        <Ul>
+          <Li>
             Decomposed, planned and implemented new complex features.
-          </ListItem>
-          <ListItem>
-            Analysed and improved <Bold>performance</Bold> and <Bold>page load speed</Bold> of the main app:
-            the Lighthouse score on mobiles increased <Bold>from 18 to 68</Bold>.
-          </ListItem>
-        </List>
+          </Li>
+          <Li>
+            Analysed and improved <B>performance</B> and <B>page load speed</B> of the main app:
+            the Lighthouse score on mobiles increased <B>from 18 to 68</B>.
+          </Li>
+        </Ul>
       </Experience>
 
       <Experience
@@ -90,24 +99,24 @@ export const CvDocument = () => (
         <Text>
           Arrival is a British electric vehicle manufacturer implementing a new micro-factory approach to production.
         </Text>
-        <List>
-          <ListItem>
-            Created in-house procurement platform from scratch using <Bold>React</Bold>, <Bold>TypeScript</Bold>, <Bold>Redux</Bold>,
-            and <Bold>microservices</Bold> on <Bold>Kotlin</Bold> and <Bold>Camunda BPMN</Bold>. It reduced supplier onboarding cycle time by <Bold>90%</Bold>,
-            reduce costs by <Bold>40%</Bold>, and data quality improved by <Bold>95%</Bold>. <Bold>5000</Bold> suppliers onboarded.
-          </ListItem>
-          <ListItem>
-            Created a UI Kit library with <Bold>29</Bold> <Bold>React</Bold> components, <Bold>100%</Bold> test code
+        <Ul>
+          <Li>
+            Created in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
+            and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. It reduced supplier onboarding cycle time by <B>90%</B>,
+            reduce costs by <B>40%</B>, and data quality improved by <B>95%</B>. <B>5000</B> suppliers onboarded.
+          </Li>
+          <Li>
+            Created a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
             coverage and automatic doc generation.
-          </ListItem>
-          <ListItem>
+          </Li>
+          <Li>
             Implemented graph-based data visualization in-house app: discovering and controlling business-data using
-            {" "}<Bold>React</Bold>, <Bold>D3.js</Bold>, and <Bold>SVG</Bold>
-          </ListItem>
-          <ListItem>
+            {" "}<B>React</B>, <B>D3.js</B>, and <B>SVG</B>
+          </Li>
+          <Li>
             Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, e2e tests
-          </ListItem>
-        </List>
+          </Li>
+        </Ul>
       </Experience>
 
       <Experience
@@ -122,16 +131,16 @@ export const CvDocument = () => (
           VeeRoute is a start-up that produces solutions for the logistics of big e-commerce clients.
           Worked on user interfaces for logistics optimization company products.
         </Text>
-        <List>
-          <ListItem>
-            Helped the company stay alive by working with the team to create an MVP, a specific solution for the national
+        <Ul>
+          <Li>
+            Helped the company stay alive by working with the team to create an MVP, a solution for the national
             Kazakhstan Post, in 3 months. This allowed the company to raise money. The solution increased the delivery
-            of parcels by <Bold>5 times</Bold> in the country.
-          </ListItem>
-          <ListItem>
-            Rewrote the main company project from <Bold>AngularJS</Bold> to <Bold>Angular 6</Bold> and <Bold>NgRx</Bold>.
-          </ListItem>
-        </List>
+            of parcels by <B>5 times</B> in the country.
+          </Li>
+          <Li>
+            Rewrote the main company project from <B>AngularJS</B> to <B>Angular 6</B> and <B>NgRx</B>.
+          </Li>
+        </Ul>
       </Experience>
 
       <SectionHeading>Skills</SectionHeading>
@@ -166,36 +175,39 @@ export const CvDocument = () => (
       <SectionHeading>Public Activities</SectionHeading>
       <Experience title="Mentorship">
         <Text>
-          Mentored <Bold>37</Bold> developers at GetMentor platform, gave <Bold>6</Bold> tech talks at GuideDao coding
-          school.
+          Mentored <B>37</B> developers at <A src="https://getmentor.dev/mentor/daniil-sitdikov-1781">GetMentor</A>,
+          gave <B>6</B> tech talks at <A src="https://www.guidedao.xyz">GuideDao coding school</A>.
         </Text>
       </Experience>
       <Experience title="Open Source">
-        <List>
-          <ListItem>
-            Created node-file-router (<Bold>118 stars</Bold>, <Bold>2-nd Tool of Week</Bold>)
-          </ListItem>
-          <ListItem>
-            Contributed to DefinitelyTyped / Jaeger (<Bold>46.6k stars</Bold>)
-          </ListItem>
-          <ListItem>Other created projects: web-performance-handbook, image-proxy-service, react-props-diff-logger</ListItem>
-        </List>
+        <Ul>
+          <Li>
+            Created <A src="https://github.com/Danilqa/node-file-router">node-file-router</A> (<B>118 stars</B>, <B>2-nd Tool of Week</B>)
+          </Li>
+          <Li>
+            Contributed to <A src="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/55370">DefinitelyTyped / Jaeger</A> (<B>46.6k stars</B>)
+          </Li>
+          <Li>Other created projects: web-performance-handbook, image-proxy-service, react-props-diff-logger</Li>
+        </Ul>
       </Experience>
       <Experience title="Tech Writting">
         <Text>
-          Wrote <Bold>11</Bold> articles on Dev.to and Hackernoon with <Bold>26k</Bold> views in total. <Bold>3 </Bold>
-          articles were featured as top stories.
+          Wrote <B>11</B> articles on <A src="https://dev.to/dsitdikov">Dev.to</A> and <A src="https://hackernoon.com/u/dsitdikov">Hackernoon</A>
+          {" "}with <B>26k</B> views in total. <B>3 </B>articles were featured as top stories.
         </Text>.
       </Experience>
       <Experience title="Pet Projects">
         <Text>
-          Developed a mobile app using <Bold>React Native</Bold> with <Bold>35k users</Bold> from CIS across App Store
+          Developed a <A src="https://replica-podcast.ru">mobile app</A> using <B>React Native</B> with <B>35k users</B> from CIS across App Store
           and Google Play.
         </Text>
       </Experience>
       <Experience title="Hackaton — Digital Breakdown 2019" isLast>
         <Text>
-          <Bold>3-rd place</Bold> in the world’s largest hackathon, as confirmed by <Bold>Guinness World Records.</Bold>
+          <B>3-rd place</B> in the world’s largest hackathon, as{" "}
+          <A src="https://www.guinnessworldrecords.com/world-records/most-participants-in-a-software-development-marathon">
+            confirmed by <B>Guinness World Records.</B>
+          </A>
         </Text>
       </Experience>
     </Page>
