@@ -182,12 +182,17 @@ export const CvDocument = () => (
       <Experience title="Open Source">
         <Ul>
           <Li>
-            Created <A src="https://github.com/Danilqa/node-file-router">node-file-router</A> (<B>118 stars</B>, <B>2-nd Tool of Week</B>)
+            Created <A src="https://github.com/Danilqa/node-file-router">node-file-router</A>
+            {" "}(<B>118 stars</B>, <A src="https://devhunt.org/tool/node-file-router">2nd Tool of the Week, DevHunt</A>)
           </Li>
           <Li>
             Contributed to <A src="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/55370">DefinitelyTyped / Jaeger</A> (<B>46.6k stars</B>)
           </Li>
-          <Li>Other created projects: web-performance-handbook, image-proxy-service, react-props-diff-logger</Li>
+          <Li>Other created projects:
+            {" "}<A src="https://github.com/Danilqa/web-performance-handbook">web-performance-handbook</A>,
+            {" "}<A src="https://github.com/Danilqa/image-proxy-service">image-proxy-service</A>,
+            {" "}<A src="https://github.com/Danilqa/react-props-diff-logger">react-props-diff-logger</A>
+          </Li>
         </Ul>
       </Experience>
       <Experience title="Tech Writting">
