@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import path from 'node:path';
 
 export function resolveFontPath(name: string): string {
