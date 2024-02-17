@@ -20,11 +20,6 @@ const styles = StyleSheet.create({
     fontSize: 11,
     lineHeight: 1.2,
   },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
-  }
 });
 
 Font.register({
