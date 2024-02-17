@@ -3,6 +3,8 @@
 This is a simple, elegant, and easy-to-use template for creating CV. It's powered by **React** and **React PDF**.
 It accommodates a lot of content and designed to follow the best practices.
 
+This CV is generated upon pushing to the main branch: [cv.pdf](https://danilqa.github.io/react-pdf-cv-template/cv.pdf)
+
 <img src=".github/images/cv-preview.png" alt="Screenshot" />
 
 Bookmark and help others discover this template! ⭐ Star it on GitHub.
