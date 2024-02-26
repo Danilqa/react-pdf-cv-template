@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY.COMPUTER_MODERN,
     color: COLOR.PRIMARY,
     backgroundColor: COLOR.SECONDARY,
-    padding: '10pt 20pt',
-    fontSize: 11,
+    padding: '24pt 36pt',
+    fontSize: 10,
     lineHeight: 1.2,
   },
 });
@@ -65,12 +65,32 @@ export const CvDocument = () => (
         </Row>
       </Header>
 
-      <SectionHeading>Experience</SectionHeading>
+      <SectionHeading>Skills</SectionHeading>
+      <Row>
+        <Text>JavaScript</Text>
+        <Bullet />
+        <Text>TypeScript</Text>
+        <Bullet />
+        <Text>React</Text>
+        <Bullet />
+        <Text>Next.js</Text>
+        <Bullet />
+        <Text>Performance Optimization</Text>
+        <Bullet />
+        <Text>React Query</Text>
+        <Bullet />
+        <Text>Zustand</Text>
+        <Bullet />
+        <Text>Redux</Text>
+      </Row>
+
+      <SectionHeading>Work Experience</SectionHeading>
 
       <Experience
         title="SoftSwiss"
         subtitle="Senior Frontend Developer"
         startDate="Oct 2022"
+        hasDuration={false}
         hasDivider
       >
         <Text>
@@ -80,11 +100,11 @@ export const CvDocument = () => (
         </Text>
         <Ul>
           <Li>
-            Decomposed, planned and implemented new complex features.
+            Led the <B>performance optimization</B> process, improved <B>page load speed</B> of the main complex app:
+            the Lighthouse score on mobiles increased <B>from 18 to 68</B>.
           </Li>
           <Li>
-            Analysed and improved <B>performance</B> and <B>page load speed</B> of the main app:
-            the Lighthouse score on mobiles increased <B>from 18 to 68</B>.
+            Decomposed, planned and implemented new complex features.
           </Li>
         </Ul>
       </Experience>
@@ -94,6 +114,7 @@ export const CvDocument = () => (
         subtitle="Frontend Developer, then Senior Full-Stack Developer"
         startDate="Jan 2019"
         endDate="Oct 2022"
+        hasDuration={false}
         hasDivider
       >
         <Text>
@@ -114,6 +135,9 @@ export const CvDocument = () => (
             {" "}<B>React</B>, <B>D3.js</B>, and <B>SVG</B>
           </Li>
           <Li>
+            Implemented automation of invoice management flow using Node.js resulting
+          </Li>
+          <Li>
             Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, e2e tests
           </Li>
         </Ul>
@@ -125,6 +149,7 @@ export const CvDocument = () => (
         startDate="Sep 2017"
         endDate="Jan 2019"
         hasDivider
+        hasDuration={false}
         isLast
       >
         <Text>
@@ -142,25 +167,6 @@ export const CvDocument = () => (
           </Li>
         </Ul>
       </Experience>
-
-      <SectionHeading>Skills</SectionHeading>
-      <Row>
-        <Text>JavaScript</Text>
-        <Bullet />
-        <Text>TypeScript</Text>
-        <Bullet />
-        <Text>React</Text>
-        <Bullet />
-        <Text>Next.js</Text>
-        <Bullet />
-        <Text>Performance Optimization</Text>
-        <Bullet />
-        <Text>React Query</Text>
-        <Bullet />
-        <Text>Zustand</Text>
-        <Bullet />
-        <Text>Redux</Text>
-      </Row>
 
       <SectionHeading>Education</SectionHeading>
       <Experience
@@ -182,7 +188,7 @@ export const CvDocument = () => (
       <Experience title="Open Source">
         <Ul>
           <Li>
-            Created <A src="https://github.com/Danilqa/node-file-router">node-file-router</A>
+            Developed <A src="https://github.com/Danilqa/node-file-router">node-file-router</A>
             {" "}(<B>118 stars</B>, <A src="https://devhunt.org/tool/node-file-router">2nd Tool of the Week, DevHunt</A>)
           </Li>
           <Li>

@@ -26,9 +26,11 @@ const styles = StyleSheet.create({
   },
   title: {
     fontStyle: 'bold',
+    fontSize: 11,
   },
   subtitle: {
     marginBottom: 5,
+    fontSize: 11,
   },
   content: {
     display: 'flex',
@@ -58,7 +60,7 @@ export const Experience = memo<ExperienceProps>(({
       <Text style={styles.title}>{title}</Text>
       {startDate && (
         <Row>
-          <Text>{startDate} - {endDate || 'present'}</Text>
+          <Text>{startDate} – {endDate || 'present'}</Text>
           {hasDuration && <><Bullet/><Text>{getDateRange(startDate, endDate)}</Text></>}
         </Row>
       )}

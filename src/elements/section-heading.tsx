@@ -7,10 +7,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     marginTop: 10,
     marginBottom: 8,
-    paddingBottom: 2,
+    paddingBottom: 0,
     width: '100%',
     borderBottom: `0.5pt solid ${COLOR.PRIMARY}`,
-    fontSize: 10,
+    fontSize: 11,
     textTransform: 'uppercase',
   },
 });

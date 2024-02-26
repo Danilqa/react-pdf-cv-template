@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
   },
   bullet: {
     display: 'flex',
-    marginTop: -1,
     marginRight: 5,
   }
 });
