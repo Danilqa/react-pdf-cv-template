@@ -61,27 +61,13 @@ export const CvDocument = () => (
             </A>
           </Text>
           <Bullet />
-          <Text>London, UK</Text>
+          <Text>London, UK | Global Talent Visa</Text>
         </Row>
       </Header>
 
-      <SectionHeading>Skills</SectionHeading>
+      <SectionHeading>Summary</SectionHeading>
       <Row>
-        <Text>JavaScript</Text>
-        <Bullet />
-        <Text>TypeScript</Text>
-        <Bullet />
-        <Text>React</Text>
-        <Bullet />
-        <Text>Next.js</Text>
-        <Bullet />
-        <Text>Performance Optimization</Text>
-        <Bullet />
-        <Text>React Query</Text>
-        <Bullet />
-        <Text>Zustand</Text>
-        <Bullet />
-        <Text>Redux</Text>
+        <Text>A Senior Frontend Engineer with 6.5+ years of experience.</Text>
       </Row>
 
       <SectionHeading>Work Experience</SectionHeading>
@@ -95,8 +81,7 @@ export const CvDocument = () => (
       >
         <Text>
           Working on a white-label Sportsbook platform for multinational users across the world. Developing 3 projects:
-          the main application, CMS, and back office. Used <B>Next.js</B>, <B>React Query</B>,
-          and <B>Zustand</B>.
+          the main application, CMS, and back office.
         </Text>
         <Ul>
           <Li>
@@ -104,7 +89,8 @@ export const CvDocument = () => (
             the Lighthouse score on mobiles increased <B>from 18 to 68</B>.
           </Li>
           <Li>
-            Decomposed, planned and implemented new complex features.
+            Decomposed, planned and implemented new complex features using <B>Next.js</B>, <B>React Query</B>,
+            and <B>Zustand</B>.
           </Li>
         </Ul>
       </Experience>
@@ -131,11 +117,8 @@ export const CvDocument = () => (
             coverage and automatic doc generation.
           </Li>
           <Li>
-            Implemented graph-based data visualization in-house app: discovering and controlling business-data using
-            {" "}<B>React</B>, <B>D3.js</B>, and <B>SVG</B>
-          </Li>
-          <Li>
-            Implemented automation of invoice management flow using Node.js resulting
+            Automated the invoice management system by creating data pipelines using <B>Node.js</B> and <B>Rossum AI</B> for
+            extracting, recognizing and exporting invoices, which reduced invoice processing time from <B>15 minutes</B> to <B>1 minute.</B>
           </Li>
           <Li>
             Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, e2e tests
@@ -178,6 +161,25 @@ export const CvDocument = () => (
         isLast
       />
 
+      <SectionHeading>Skills</SectionHeading>
+      <Row>
+        <Text>JavaScript</Text>
+        <Bullet />
+        <Text>TypeScript</Text>
+        <Bullet />
+        <Text>React</Text>
+        <Bullet />
+        <Text>Next.js</Text>
+        <Bullet />
+        <Text>Performance Optimization</Text>
+        <Bullet />
+        <Text>React Query</Text>
+        <Bullet />
+        <Text>Zustand</Text>
+        <Bullet />
+        <Text>Redux</Text>
+      </Row>
+
       <SectionHeading>Public Activities</SectionHeading>
       <Experience title="Mentorship">
         <Text>
@@ -189,7 +191,7 @@ export const CvDocument = () => (
         <Ul>
           <Li>
             Developed <A src="https://github.com/Danilqa/node-file-router">node-file-router</A>
-            {" "}(<B>118 stars</B>, <A src="https://devhunt.org/tool/node-file-router">2nd Tool of the Week, DevHunt</A>)
+            {" "}(<B>119 stars</B>, <A src="https://devhunt.org/tool/node-file-router">2nd Tool of the Week, DevHunt</A>)
           </Li>
           <Li>
             Contributed to <A src="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/55370">DefinitelyTyped / Jaeger</A> (<B>46.6k stars</B>)
@@ -206,12 +208,6 @@ export const CvDocument = () => (
           Wrote <B>11</B> articles on <A src="https://dev.to/dsitdikov">Dev.to</A> and <A src="https://hackernoon.com/u/dsitdikov">Hackernoon</A>
           {" "}with <B>26k</B> views in total. <B>3 </B>articles were featured as top stories.
         </Text>.
-      </Experience>
-      <Experience title="Pet Projects">
-        <Text>
-          Developed a <A src="https://replica-podcast.ru">mobile app</A> using <B>React Native</B> with <B>35k users</B> from CIS across App Store
-          and Google Play.
-        </Text>
       </Experience>
       <Experience title="Hackaton — Digital Breakdown 2019" isLast>
         <Text>
