@@ -67,7 +67,10 @@ export const CvDocument = () => (
 
       <SectionHeading>Summary</SectionHeading>
       <Row>
-        <Text>A Senior Frontend Engineer with 6.5+ years of experience.</Text>
+        <Text>
+          Senior Frontend Developer with over 6.5 years of experience in product tech companies. Strong experience in
+          creating high-quality applications from scratch, as well as improving performance in complex B2C applications.
+        </Text>
       </Row>
 
       <SectionHeading>Work Experience</SectionHeading>
@@ -86,7 +89,7 @@ export const CvDocument = () => (
         <Ul>
           <Li>
             Led the <B>performance optimization</B> process, improved <B>page load speed</B> of the main complex app:
-            the Lighthouse score on mobiles increased <B>from 18 to 68</B>.
+            the Lighthouse score on mobiles increased <B>from 6 to 68</B>.
           </Li>
           <Li>
             Decomposed, planned and implemented new complex features using <B>Next.js</B>, <B>React Query</B>,
@@ -108,9 +111,9 @@ export const CvDocument = () => (
         </Text>
         <Ul>
           <Li>
-            Created in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
-            and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. It reduced supplier onboarding cycle time by <B>90%</B>,
-            reduce costs by <B>40%</B>, and data quality improved by <B>95%</B>. <B>5000</B> suppliers onboarded.
+            Created an in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
+            and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. This reduced the supplier onboarding cycle time by <B>90%</B>,
+            reduce costs by <B>40%</B>, and improved data quality by <B>95%</B>. <B>5000</B> were suppliers onboarded.
           </Li>
           <Li>
             Created a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
@@ -121,7 +124,7 @@ export const CvDocument = () => (
             extracting, recognizing and exporting invoices, which reduced invoice processing time from <B>15 minutes</B> to <B>1 minute.</B>
           </Li>
           <Li>
-            Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, e2e tests
+            Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, and e2e tests.
           </Li>
         </Ul>
       </Experience>
@@ -136,18 +139,16 @@ export const CvDocument = () => (
         isLast
       >
         <Text>
-          VeeRoute is a start-up that produces solutions for the logistics of big e-commerce clients.
-          Worked on user interfaces for logistics optimization company products.
+          VeeRoute is a start-up that produces solutions for the logistics of large e-commerce clients.
         </Text>
         <Ul>
           <Li>
-            Helped the company stay alive by working with the team to create an MVP, a solution for the national
-            Kazakhstan Post, in 3 months. This allowed the company to raise money. The solution increased the delivery
-            of parcels by <B>5 times</B> in the country.
+            Assisted in the company's survival by collaborating with the team to create an app for the National
+            Kazakhstan Post <B>within 3 months</B>. This enabled the company to raise funds. The solution increased parcel
+            delivery by <B>5</B> times.
           </Li>
-          <Li>
-            Rewrote the main company project from <B>AngularJS</B> to <B>Angular 6</B> and <B>NgRx</B>.
-          </Li>
+          <Li>Developed a UI Kit library with <B>18</B> components based on the new design system.</Li>
+          <Li>Rewrote the main company project from <B>AngularJS</B> to <B>Angular 6</B> and <B>NgRx</B>, integrating a new design system.</Li>
         </Ul>
       </Experience>
 
@@ -184,7 +185,7 @@ export const CvDocument = () => (
       <Experience title="Mentorship">
         <Text>
           Mentored <B>37</B> developers at <A src="https://getmentor.dev/mentor/daniil-sitdikov-1781">GetMentor</A>,
-          gave <B>6</B> tech talks at <A src="https://www.guidedao.xyz">GuideDao coding school</A>.
+          gave <B>6</B> tech talks and mentored students at <A src="https://www.guidedao.xyz">GuideDao coding school</A>.
         </Text>
       </Experience>
       <Experience title="Open Source">
