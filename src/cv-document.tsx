@@ -113,7 +113,7 @@ export const CvDocument = () => (
           <Li>
             Created an in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
             and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. This reduced the supplier onboarding cycle time by <B>90%</B>,
-            reduce costs by <B>40%</B>, and improved data quality by <B>95%</B>. <B>5000</B> were suppliers onboarded.
+            reduced costs by <B>40%</B>, and improved data quality by <B>95%</B>. <B>5000</B> were suppliers onboarded.
           </Li>
           <Li>
             Created a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
