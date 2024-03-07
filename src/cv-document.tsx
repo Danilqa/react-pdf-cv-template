@@ -50,7 +50,7 @@ export const CvDocument = () => (
             </A>
           </Text>
           <Bullet />
-          <Text>hello.boriskas@gmail.com</Text>
+          <Text>dan.sitdikov@gmail.com</Text>
           <Bullet />
           <Text>+48 571801626</Text>
         </Row>
@@ -114,7 +114,7 @@ export const CvDocument = () => (
           <Li>
             Created an in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
             and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. This reduced the supplier onboarding cycle time by <B>90%</B>,
-            reduced costs by <B>40%</B>, and improved data quality by <B>95%</B>. <B>5000</B> suppliers were onboarded.
+            decreased costs by <B>40%</B>, and improved data quality by <B>95%</B>. <B>5000</B> suppliers were onboarded.
           </Li>
           <Li>
             Created a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
@@ -122,7 +122,7 @@ export const CvDocument = () => (
           </Li>
           <Li>
             Automated the invoice management system by creating data pipelines using <B>Node.js</B> and <B>Rossum AI</B> for
-            extracting, recognizing and exporting invoices, which reduced invoice processing time from <B>15 minutes</B> to <B>1 minute.</B>
+            extracting, recognizing and exporting invoices, which lowered invoice processing time from <B>15 minutes</B> to <B>1 minute.</B>
           </Li>
           <Li>
             Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, and e2e tests.
@@ -182,7 +182,7 @@ export const CvDocument = () => (
         <Text>Redux</Text>
       </Row>
 
-      <SectionHeading>Public Activities</SectionHeading>
+      <SectionHeading>Additional Activities</SectionHeading>
       <Experience title="Mentorship">
         <Text>
           Mentored <B>37</B> developers at <A src="https://getmentor.dev/mentor/daniil-sitdikov-1781">GetMentor</A>,
