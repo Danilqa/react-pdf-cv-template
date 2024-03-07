@@ -89,7 +89,8 @@ export const CvDocument = () => (
         <Ul>
           <Li>
             Led the <B>performance optimization</B> process, improved <B>page load speed</B> of the main complex app:
-            the Lighthouse score on mobiles increased <B>from 6 to 68</B>.
+            the Lighthouse score on mobiles increased <B>from 6 to 68</B>. It allows for work in countries with low
+            internet speeds and low-end devices.
           </Li>
           <Li>
             Decomposed, planned and implemented new complex features using <B>Next.js</B>, <B>React Query</B>,
