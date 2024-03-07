@@ -69,7 +69,7 @@ export const CvDocument = () => (
       <Row>
         <Text>
           Senior Frontend Developer with over 6.5 years of experience in product tech companies. Strong experience in
-          creating high-quality applications from scratch, as well as improving performance in complex B2C applications.
+          creating high-quality solutions from scratch, as well as improving performance in complex B2C application.
         </Text>
       </Row>
 
@@ -84,7 +84,7 @@ export const CvDocument = () => (
       >
         <Text>
           Working on a white-label Sportsbook platform for multinational users across the world. Developing 3 projects:
-          the main application, CMS, and back office.
+          sports betting application, CMS, and back office.
         </Text>
         <Ul>
           <Li>
@@ -125,7 +125,7 @@ export const CvDocument = () => (
             extracting, recognizing and exporting invoices, which lowered invoice processing time from <B>15 minutes</B> to <B>1 minute.</B>
           </Li>
           <Li>
-            Integrated the best development practices: Sentry error monitoring, release process pipelines, linters, tracing, and e2e tests.
+            Integrated the best development practices: error monitoring, release process pipelines, linters, tracing, and e2e tests.
           </Li>
         </Ul>
       </Experience>
@@ -145,7 +145,7 @@ export const CvDocument = () => (
         <Ul>
           <Li>
             Assisted in the company's survival by collaborating with the team to create an app for the National
-            Kazakhstan Post <B>within 3 months</B>. This enabled the company to raise funds. The solution increased parcel
+            Kazakhstan Post within <B>3</B> months. This enabled the company to raise funds. The solution increased parcel
             delivery by <B>5</B> times.
           </Li>
           <Li>Developed a UI Kit library with <B>18</B> components based on the new design system.</Li>
@@ -183,10 +183,10 @@ export const CvDocument = () => (
       </Row>
 
       <SectionHeading>Additional Activities</SectionHeading>
-      <Experience title="Mentorship">
+      <Experience title="Volunteer Mentorship">
         <Text>
-          Mentored <B>37</B> developers at <A src="https://getmentor.dev/mentor/daniil-sitdikov-1781">GetMentor</A>,
-          gave <B>6</B> tech talks and mentored students at <A src="https://www.guidedao.xyz">GuideDao coding school</A>.
+          Mentored <B>37</B> developers one-on-one at <A src="https://getmentor.dev/mentor/daniil-sitdikov-1781">GetMentor</A>,
+          gave <B>6</B> tech talks, and mentored students at <A src="https://www.guidedao.xyz">GuideDao coding school</A>.
         </Text>
       </Experience>
       <Experience title="Open Source">

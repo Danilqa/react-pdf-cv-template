@@ -61,20 +61,21 @@ export const Experience = memo<ExperienceProps>(({
       {startDate && (
         <Row>
           <Text>{startDate} – {endDate || 'present'}</Text>
-          {hasDuration && <><Bullet/><Text>{getDateRange(startDate, endDate)}</Text></>}
+          {hasDuration && <><Bullet /><Text>{getDateRange(startDate, endDate)}</Text></>}
         </Row>
       )}
     </Row>
-    {subtitle && <Row justifyContent="space-between">
-      <View style={styles.subtitle}>
-        <Text>{subtitle}</Text>
-      </View>
-    </Row>}
 
-    <View style={styles.content} wrap>
-      {children}
-    </View>
+    {subtitle && (
+      <Row justifyContent="space-between">
+        <View style={[styles.subtitle, !children ? { marginBottom: 0 } : {}]}>
+          <Text>{subtitle}</Text>
+        </View>
+      </Row>
+    )}
 
-    {!isLast && hasDivider && <View style={styles.divider}/>}
+    {children && <View style={styles.content} wrap>{children}</View>}
+
+    {!isLast && hasDivider && <View style={styles.divider} />}
   </View>
 ));
