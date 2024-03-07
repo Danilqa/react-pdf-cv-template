@@ -42,7 +42,3 @@ tools like LaTeX.
 1. `src/cv-document.tsx` - main file for your CV. You can fill your data here.
 2. `src/elements` - folder with atomic elements for your CV: bullet, list, bold, etc.
 3. `src/sections` - folder with complex sections for your CV: header and experience.
-
-## Credits
-
-1. Template inspiration: [resumake.io](https://github.com/saadq/resumake.io)

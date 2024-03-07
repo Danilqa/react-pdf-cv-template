@@ -57,7 +57,7 @@ export const CvDocument = () => (
         <Row justifyContent="center">
           <Text>
             <A src="https://github.com/Danilqa">
-              https://github.com/Danilqa
+              https://github.com/danilqa
             </A>
           </Text>
           <Bullet />
@@ -112,12 +112,12 @@ export const CvDocument = () => (
         </Text>
         <Ul>
           <Li>
-            Created an in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
+            Built an in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
             and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. This reduced the supplier onboarding cycle time by <B>90%</B>,
-            decreased costs by <B>40%</B>, and improved data quality by <B>95%</B>. <B>5000</B> suppliers were onboarded.
+            decreased costs by <B>40%</B>, and improved data quality by <B>95%</B> for over <B>5000</B> onboarded suppliers.
           </Li>
           <Li>
-            Created a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
+            Developed a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
             coverage and automatic doc generation.
           </Li>
           <Li>
