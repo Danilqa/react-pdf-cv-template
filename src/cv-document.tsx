@@ -39,186 +39,194 @@ Font.register({
   ]
 });
 
+// Keep words whole: the default hyphenation splits words like "Lighthouse" across lines.
+Font.registerHyphenationCallback((word) => [word]);
+
 export const CvDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       <Header fullName="Daniil Sitdikov">
-        <Row>
-          <Text>
-            <A src="https://www.linkedin.com/in/dsitdikov">
-              https://www.linkedin.com/in/dsitdikov
-            </A>
-          </Text>
-          <Bullet />
-          <Text>dan.sitdikov@gmail.com</Text>
-          <Bullet />
-          <Text>+48 571801626</Text>
+        <Row justifyContent="center">
+          <Text>Senior Software Engineer</Text>
         </Row>
         <Row justifyContent="center">
+          <Text>+44 7342343988</Text>
+          <Bullet />
           <Text>
-            <A src="https://github.com/Danilqa">
-              https://github.com/danilqa
-            </A>
+            <A src="mailto:dan.sitdikov@gmail.com">dan.sitdikov@gmail.com</A>
           </Text>
           <Bullet />
-          <Text>London, UK | Global Talent Visa</Text>
+          <Text>
+            <A src="https://github.com/danilqa">github.com/danilqa</A>
+          </Text>
+          <Bullet />
+          <Text>
+            <A src="https://www.linkedin.com/in/dsitdikov">linkedin.com/in/dsitdikov</A>
+          </Text>
+        </Row>
+        <Row justifyContent="center">
+          <Text>London, UK</Text>
+          <Bullet />
+          <Text>UK Global Talent Visa (I have a work permit in the UK)</Text>
         </Row>
       </Header>
 
-      <SectionHeading>Summary</SectionHeading>
+      <SectionHeading>Professional Summary</SectionHeading>
+      <Ul>
+        <Li>Engineer with <B>8+</B> years of experience building fintech, procurement, and enterprise SaaS products.</Li>
+        <Li>
+          Developed a production-ready library <A src="https://github.com/Danilqa/node-file-router">node-file-router</A>
+          {" "}(206 stars, 1st Tool of the Week, DevHunt).
+        </Li>
+        <Li>
+          Built company-wide background AI agents system (11 stars, <A src="https://github.com/Danilqa/kombinat">GitHub</A>)
+          and E2E testing framework and workflow.
+        </Li>
+      </Ul>
+
+      <SectionHeading>Skills</SectionHeading>
       <Row>
-        <Text>
-          Senior Frontend Developer with over 6.5 years of experience in product tech companies. Strong experience in
-          creating high-quality solutions from scratch, as well as improving performance in complex B2C application.
-        </Text>
+        <Text>Kotlin</Text>
+        <Bullet />
+        <Text>Postgres</Text>
+        <Bullet />
+        <Text>React</Text>
+        <Bullet />
+        <Text>Node.js</Text>
+        <Bullet />
+        <Text>TypeScript</Text>
+        <Bullet />
+        <Text>AI workflows</Text>
       </Row>
 
-      <SectionHeading>Work Experience</SectionHeading>
+      <SectionHeading>Experience</SectionHeading>
 
       <Experience
-        title="SoftSwiss"
-        subtitle="Senior Frontend Developer"
-        startDate="Oct 2022"
+        title="Apron"
+        subtitle="Tech Lead"
+        startDate="Jun 2024"
         hasDuration={false}
         hasDivider
       >
         <Text>
-          Working on a white-label Sportsbook platform for multinational users across the world. Developing 3 projects:
-          sports betting application, CMS, and back office.
+          Apron is a payments and AI bookkeeping SaaS for businesses, backed by Index Ventures (Discord, Figma, Revolut).
         </Text>
         <Ul>
           <Li>
-            Led the <B>performance optimization</B> process, improved <B>page load speed</B> of the main complex app:
-            the Lighthouse score on mobiles increased <B>from 6 to 68</B>. It allows for work in countries with low
-            internet speeds and low-end devices.
+            Technical owner of payments, wallets, authentication, user management, and company-wide engineering
+            initiatives.
           </Li>
           <Li>
-            Decomposed, planned and implemented new complex features using <B>Next.js</B>, <B>React Query</B>,
-            and <B>Zustand</B>.
+            Launched a company-wide engine of <B>24/7 background AI agents</B> that investigate production incidents,
+            close product gaps, monitor feature health and user feedback, and fix bugs and accessibility issues. Adopted
+            by 6 teams; in one month, it helped close 73 engineering escalation tickets and 10 accessibility issues, and
+            proactively fixed 5 bugs.
+          </Li>
+          <Li>Led the development and launch of the Rewards product stream with Virgin, driving 30% revenue growth.</Li>
+          <Li>
+            Led the development of Wallets, company-wide authentication (SCA), and major payment products redesigns.
+          </Li>
+          <Li>
+            Delivered a company-wide E2E testing system, enabling 3 product teams to own and scale their <B>QA</B>.
+          </Li>
+          <Li>
+            Led the payment success project, implementing tools and monitoring that reduced the manual effort required
+            to detect and resolve stuck payments. This reduced engineering intervention from 6% to 2%.
+          </Li>
+        </Ul>
+      </Experience>
+
+      <Experience
+        title="SoftSwiss"
+        subtitle="Senior Software Engineer"
+        startDate="Oct 2022"
+        endDate="May 2024"
+        hasDuration={false}
+        hasDivider
+      >
+        <Text>
+          Company with €450M+ monthly turnover. Worked on a white-label product operating under 150 brands in 62
+          countries.
+        </Text>
+        <Ul>
+          <Li>
+            Led <B>performance optimization</B> for a high-traffic sportsbook app on <B>React</B>, improving load speed
+            and mobile Lighthouse score from 6 to 72, significantly improving usability for real users on low-end
+            devices.
           </Li>
         </Ul>
       </Experience>
 
       <Experience
         title="Arrival"
-        subtitle="Frontend Developer, then Senior Full-Stack Developer"
+        subtitle="Lead Software Engineer"
         startDate="Jan 2019"
         endDate="Oct 2022"
         hasDuration={false}
         hasDivider
       >
         <Text>
-          Arrival is a British electric vehicle manufacturer implementing a new micro-factory approach to production.
+          Arrival is a British electric vehicle manufacturer with an IPO in ’21 and a $3B valuation.
         </Text>
         <Ul>
           <Li>
-            Built an in-house procurement platform from scratch using <B>React</B>, <B>TypeScript</B>, <B>Redux</B>,
-            and <B>microservices</B> on <B>Kotlin</B> and <B>Camunda BPMN</B>. This reduced the supplier onboarding cycle time by <B>90%</B>,
-            decreased costs by <B>40%</B>, and improved data quality by <B>95%</B> for over <B>5000</B> onboarded suppliers.
+            Developed an in-house <B>procurement platform</B> using <B>React, TypeScript</B> and <B>Kotlin
+            microservices</B>, reducing supplier onboarding cycle time by 90%, cutting costs by 40%, and enhancing data
+            quality for over 5000 suppliers.
           </Li>
           <Li>
-            Developed a UI Kit library with <B>29</B> <B>React</B> components, <B>100%</B> test code
-            coverage and automatic doc generation.
-          </Li>
-          <Li>
-            Automated the invoice management system by creating data pipelines using <B>Node.js</B> and <B>Rossum AI</B> for
-            extracting, recognizing and exporting invoices, which lowered invoice processing time from <B>15 minutes</B> to <B>1 minute.</B>
-          </Li>
-          <Li>
-            Integrated the best development practices: error monitoring, release process pipelines, linters, tracing, and e2e tests.
+            Launched the invoice management system by establishing data pipelines with Node.js and Rossum <B>AI</B> to
+            extract, recognize, and export invoices, reducing invoice processing time from 15 minutes to 1 minute.
           </Li>
         </Ul>
       </Experience>
 
       <Experience
         title="VeeRoute"
-        subtitle="Frontend Developer"
-        startDate="Sep 2017"
+        subtitle="Software Engineer"
+        startDate="Oct 2017"
         endDate="Jan 2019"
         hasDivider
         hasDuration={false}
         isLast
       >
         <Text>
-          VeeRoute is a start-up that produces solutions for the logistics of large e-commerce clients.
+          VeeRoute is a B2B SaaS company providing logistics solutions.
         </Text>
         <Ul>
           <Li>
-            Assisted in the company's survival by collaborating with the team to create an app for the National
-            Kazakhstan Post within <B>3</B> months. This enabled the company to raise funds. The solution increased parcel
-            delivery by <B>5</B> times.
+            Developed a front-end app for the logistics planner for the National Kazakhstan Post in 3 months
+            using <B>TypeScript</B> and <B>Angular</B>, reducing parcel delivery time 5x.
           </Li>
-          <Li>Developed a UI Kit library with <B>18</B> components based on the new design system.</Li>
-          <Li>Rewrote the main company project from <B>AngularJS</B> to <B>Angular 6</B> and <B>NgRx</B>, integrating a new design system.</Li>
         </Ul>
       </Experience>
 
       <SectionHeading>Education</SectionHeading>
       <Experience
-        title="Saint Petersburg State University of Aerospace Instrumentation"
-        subtitle="Bachelor’s Degree in Software Engineering (GPA 4.28 / 5.0)"
+        title="Bachelor’s Degree in Software Engineering"
+        subtitle="Saint Petersburg State University of Aerospace Instrumentation"
         startDate="2015"
         endDate="2019"
         hasDuration={false}
         isLast
       />
 
-      <SectionHeading>Skills</SectionHeading>
-      <Row>
-        <Text>JavaScript</Text>
-        <Bullet />
-        <Text>TypeScript</Text>
-        <Bullet />
-        <Text>React</Text>
-        <Bullet />
-        <Text>Next.js</Text>
-        <Bullet />
-        <Text>Performance Optimization</Text>
-        <Bullet />
-        <Text>React Query</Text>
-        <Bullet />
-        <Text>Zustand</Text>
-        <Bullet />
-        <Text>Redux</Text>
-      </Row>
-
-      <SectionHeading>Additional Activities</SectionHeading>
-      <Experience title="Volunteer Mentorship">
-        <Text>
-          Mentored <B>37</B> developers one-on-one at <A src="https://getmentor.dev/mentor/daniil-sitdikov-1781">GetMentor</A>,
-          gave <B>6</B> tech talks, and mentored students at <A src="https://www.guidedao.xyz">GuideDao coding school</A>.
-        </Text>
-      </Experience>
-      <Experience title="Open Source">
-        <Ul>
-          <Li>
-            Developed <A src="https://github.com/Danilqa/node-file-router">node-file-router</A>
-            {" "}(<B>119 stars</B>, <A src="https://devhunt.org/tool/node-file-router">2nd Tool of the Week, DevHunt</A>)
-          </Li>
-          <Li>
-            Contributed to <A src="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/55370">DefinitelyTyped / Jaeger</A> (<B>46.6k stars</B>)
-          </Li>
-          <Li>Other created projects:
-            {" "}<A src="https://github.com/Danilqa/web-performance-handbook">web-performance-handbook</A>,
-            {" "}<A src="https://github.com/Danilqa/image-proxy-service">image-proxy-service</A>,
-            {" "}<A src="https://github.com/Danilqa/react-props-diff-logger">react-props-diff-logger</A>
-          </Li>
-        </Ul>
-      </Experience>
-      <Experience title="Tech Writting">
-        <Text>
-          Wrote <B>11</B> articles on <A src="https://dev.to/dsitdikov">Dev.to</A> and <A src="https://hackernoon.com/u/dsitdikov">Hackernoon</A>
-          {" "}with <B>26k</B> views in total. <B>3 </B>articles were featured as top stories.
-        </Text>.
-      </Experience>
-      <Experience title="Hackaton — Digital Breakdown 2019" isLast>
-        <Text>
-          <B>3-rd place</B> in the world’s largest hackathon, as{" "}
-          <A src="https://www.guinnessworldrecords.com/world-records/most-participants-in-a-software-development-marathon">
-            confirmed by <B>Guinness World Records.</B>
-          </A>
-        </Text>
-      </Experience>
+      <SectionHeading>Activities and Projects</SectionHeading>
+      <Ul>
+        <Li>
+          <B>Mentorship:</B> gave 6 tech talks and mentored students at GuideDao (#1 crypto and AI-coding school in the
+          CIS).
+        </Li>
+        <Li>
+          <B>Open Source:</B> contributed to
+          {" "}<A src="https://github.com/DefinitelyTyped/DefinitelyTyped/pull/55370">DefinitelyTyped / Jaeger</A>
+          {" "}(46.6k stars).
+        </Li>
+        <Li>
+          <B>Other:</B> 3rd place in the world’s largest hackathon, with over 3.2k participants, verified by <B>Guinness
+          World Records</B>.
+        </Li>
+      </Ul>
     </Page>
   </Document>
 );
