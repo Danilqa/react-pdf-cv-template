@@ -47,7 +47,7 @@ export const CvDocument = () => (
     <Page size="A4" style={styles.page}>
       <Header fullName="Daniil Sitdikov">
         <Row justifyContent="center">
-          <Text>Senior Software Engineer</Text>
+          <Text>Lead Software Engineer</Text>
         </Row>
         <Row justifyContent="center">
           <Text>+44 7342343988</Text>
