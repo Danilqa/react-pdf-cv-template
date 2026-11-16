@@ -50,11 +50,9 @@ export const CvDocument = () => (
           <Text>Lead Software Engineer</Text>
         </Row>
         <Row justifyContent="center">
-          <Text>+44 7342343988</Text>
+          <Text>+44 xxxx xxxxxx</Text>
           <Bullet />
-          <Text>
-            <A src="mailto:dan.sitdikov@gmail.com">dan.sitdikov@gmail.com</A>
-          </Text>
+          <Text>dan.xxxxxxxx@gmail.com</Text>
           <Bullet />
           <Text>
             <A src="https://github.com/danilqa">github.com/danilqa</A>
@@ -119,19 +117,19 @@ export const CvDocument = () => (
           <Li>
             Launched a company-wide engine of <B>24/7 background AI agents</B> that investigate production incidents,
             close product gaps, monitor feature health and user feedback, and fix bugs and accessibility issues. Adopted
-            by 6 teams; in one month, it helped close 73 engineering escalation tickets and 10 accessibility issues, and
-            proactively fixed 5 bugs.
+            by XX teams; in one month, it helped close XX engineering escalation tickets and XX accessibility issues, and
+            proactively fixed XX bugs.
           </Li>
-          <Li>Led the development and launch of the Rewards product stream with Virgin, driving 30% revenue growth.</Li>
+          <Li>Led the development and launch of the Rewards product stream with Virgin, driving XX% revenue growth.</Li>
           <Li>
             Led the development of Wallets, company-wide authentication (SCA), and major payment products redesigns.
           </Li>
           <Li>
-            Delivered a company-wide E2E testing system, enabling 3 product teams to own and scale their <B>QA</B>.
+            Delivered a company-wide E2E testing system, enabling XX product teams to own and scale their <B>QA</B>.
           </Li>
           <Li>
             Led the payment success project, implementing tools and monitoring that reduced the manual effort required
-            to detect and resolve stuck payments. This reduced engineering intervention from 6% to 2%.
+            to detect and resolve stuck payments. This reduced engineering intervention from XX% to XX%.
           </Li>
         </Ul>
       </Experience>
@@ -145,13 +143,13 @@ export const CvDocument = () => (
         hasDivider
       >
         <Text>
-          Company with €450M+ monthly turnover. Worked on a white-label product operating under 150 brands in 62
+          Company with €XXM+ monthly turnover. Worked on a white-label product operating under XX brands in XX
           countries.
         </Text>
         <Ul>
           <Li>
             Led <B>performance optimization</B> for a high-traffic sportsbook app on <B>React</B>, improving load speed
-            and mobile Lighthouse score from 6 to 72, significantly improving usability for real users on low-end
+            and mobile Lighthouse score from XX to XX, significantly improving usability for real users on low-end
             devices.
           </Li>
         </Ul>
@@ -166,17 +164,17 @@ export const CvDocument = () => (
         hasDivider
       >
         <Text>
-          Arrival is a British electric vehicle manufacturer with an IPO in ’21 and a $3B valuation.
+          Arrival is a British electric vehicle manufacturer with an IPO in ’21 and a $XXB valuation.
         </Text>
         <Ul>
           <Li>
             Developed an in-house <B>procurement platform</B> using <B>React, TypeScript</B> and <B>Kotlin
-            microservices</B>, reducing supplier onboarding cycle time by 90%, cutting costs by 40%, and enhancing data
-            quality for over 5000 suppliers.
+            microservices</B>, reducing supplier onboarding cycle time by XX%, cutting costs by XX%, and enhancing data
+            quality for over XX suppliers.
           </Li>
           <Li>
             Launched the invoice management system by establishing data pipelines with Node.js and Rossum <B>AI</B> to
-            extract, recognize, and export invoices, reducing invoice processing time from 15 minutes to 1 minute.
+            extract, recognize, and export invoices, reducing invoice processing time from XX minutes to XX minutes.
           </Li>
         </Ul>
       </Experience>
@@ -195,8 +193,8 @@ export const CvDocument = () => (
         </Text>
         <Ul>
           <Li>
-            Developed a front-end app for the logistics planner for the National Kazakhstan Post in 3 months
-            using <B>TypeScript</B> and <B>Angular</B>, reducing parcel delivery time 5x.
+            Developed a front-end app for the logistics planner for the National Kazakhstan Post in XX months
+            using <B>TypeScript</B> and <B>Angular</B>, reducing parcel delivery time XXx.
           </Li>
         </Ul>
       </Experience>
